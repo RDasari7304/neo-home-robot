@@ -13,11 +13,11 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-gray-100 text-gray-900 dark:from-black dark:via-zinc-900 dark:to-zinc-800 font-sans">
+    <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-gray-dark100 text-gray-900 :from-black font-sans">
       {/* HEADER */}
       <header className="max-w-6xl mx-auto p-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-full bg-white dark:bg-zinc-800 shadow flex items-center justify-center overflow-hidden">
+          <div className="w-12 h-12 rounded-full bg-white shadow flex items-center justify-center overflow-hidden">
             <Image
               src="/neo.png"
               alt="NEO logo"
@@ -31,7 +31,7 @@ export default function Home() {
             <p className="text-xs text-gray-500">1x companion — Your future home robot</p>
           </div>
         </div>
-        <nav className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
+        <nav className="flex items-center gap-4 text-sm text-gray-600 ">
           <a href="#about" className="hover:underline">
             About
           </a>
@@ -49,10 +49,10 @@ export default function Home() {
         {/* HERO */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-10">
           <div className="space-y-6">
-            <h2 className="text-5xl font-extrabold leading-tight dark:text-zinc-100">
+            <h2 className="text-5xl font-extrabold leading-tight ">
               NEO — your future companion
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 max-w-xl">
+            <p className="text-gray-600  max-w-xl">
               NEO 1x Companion: Your personal home assistant—intelligent, autonomous, and ready to handle the everyday so you don’t have to.</p>
 
             <div className="flex items-center gap-4">
@@ -67,7 +67,7 @@ export default function Home() {
 
               <button
                 onClick={copyAddress}
-                className="px-4 py-2 border border-gray-300 dark:border-zinc-600 rounded-md text-sm hover:bg-gray-100 dark:hover:bg-zinc-700"
+                className="px-4 py-2 border border-gray-300  rounded-md text-sm hover:bg-gray-100 "
               >
                 Copy Contract
               </button>
@@ -84,7 +84,7 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center md:justify-end">
-            <div className="w-80 h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden bg-white dark:bg-zinc-800 shadow-lg flex items-center justify-center">
+            <div className="w-80 h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden bg-white shadow-lg flex items-center justify-center">
               <Image
                 src="/neo.png"
                 alt="NEO art"
@@ -99,21 +99,21 @@ export default function Home() {
         {/* ABOUT */}
         <section
           id="about"
-          className="mt-20 bg-white dark:bg-zinc-900 rounded-2xl p-8 shadow-sm"
+          className="mt-20 bg-white  rounded-2xl p-8 shadow-sm"
         >
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-4 border rounded-lg dark:border-zinc-700">
+            <div className="p-4 border rounded-lg ">
               <h4 className="text-sm font-semibold">Max Supply</h4>
-              <p className="text-gray-600 dark:text-gray-400 mt-1">999,989,989 Tokens</p>
+              <p className="text-gray-600  mt-1">999,989,989 Tokens</p>
             </div>
-            <div className="p-4 border rounded-lg dark:border-zinc-700">
+            <div className="p-4 border rounded-lg ">
               <h4 className="text-sm font-semibold">Tax / Fees</h4>
-              <p className="text-gray-600 dark:text-gray-400 mt-1">0% Tax</p>
+              <p className="text-gray-600  mt-1">0% Tax</p>
             </div>
-            <div className="p-4 border rounded-lg dark:border-zinc-700">
+            <div className="p-4 border rounded-lg ">
               <h4 className="text-sm font-semibold">Distribution</h4>
-              <p className="text-gray-600 dark:text-gray-400 mt-1">
+              <p className="text-gray-600 0 mt-1">
                 Community / Liquidity / Team
               </p>
             </div>
@@ -122,10 +122,10 @@ export default function Home() {
 
         {/* HOW TO BUY */}
         <section id="how" className="mt-12">
-          <h3 className="text-xl font-semibold dark:text-zinc-100">
+          <h3 className="text-xl font-semibold ">
             How to Buy
           </h3>
-          <ol className="mt-3 list-decimal list-inside text-gray-700 dark:text-gray-400 space-y-2">
+          <ol className="mt-3 list-decimal list-inside text-gray-700  space-y-2">
             <li>Install a crypto wallet (MetaMask, Phantom, etc.).</li>
             <li>Copy the contract address using the button above.</li>
             <li>Paste it into your DEX and select NEO token.</li>
@@ -136,17 +136,17 @@ export default function Home() {
         {/* TOKEN DETAILS */}
         <section
           id="token"
-          className="mt-12 bg-white dark:bg-zinc-900 p-6 rounded-2xl shadow-sm flex flex-col items-center"
+          className="mt-12 bg-white  p-6 rounded-2xl shadow-sm flex flex-col items-center"
         >
-          <h3 className="text-xl font-semibold dark:text-zinc-100">
+          <h3 className="text-xl font-semibold ">
             Token Details
           </h3>
           <div className="mt-4  justify-center ml-auto mr-auto">
-            <div className="p-4 border rounded dark:border-zinc-700">
-              <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300">
+            <div className="p-4 border rounded ">
+              <h4 className="text-sm font-medium text-gray-700 ">
                 Contract Address
               </h4>
-              <p className="text-sm mt-2 break-all text-gray-900 dark:text-gray-100">
+              <p className="text-sm mt-2 break-all text-gray-900 ">
                 {CONTRACT_ADDRESS}
               </p>
             </div>
@@ -154,7 +154,7 @@ export default function Home() {
         </section>
 
         {/* FOOTER */}
-        <footer className="mt-16 text-center text-gray-500 text-sm dark:text-gray-400">
+        <footer className="mt-16 text-center text-gray-500 text-sm ">
           <p>
             © {new Date().getFullYear()} NEO — Built with ♥ by the NEO team.
           </p>
