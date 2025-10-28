@@ -32,9 +32,7 @@ export default function Home() {
           </div>
         </div>
         <nav className="flex items-center gap-4 text-sm text-gray-600 ">
-          <a href="#about" className="hover:underline">
-            About
-          </a>
+
           <a href="#how" className="hover:underline">
             How to Buy
           </a>
