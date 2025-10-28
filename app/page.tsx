@@ -36,9 +36,6 @@ export default function Home() {
           <a href="#how" className="hover:underline">
             How to Buy
           </a>
-          <a href="#token" className="hover:underline">
-            Token
-          </a>
         </nav>
       </header>
 
